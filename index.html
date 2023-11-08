@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Cette appli est séparée en trois sections mais dans le main c'est juste deux grandes sections d'abord -->
+    <main>
+<!-- section pour afficher le weather -->
+        <section class="weather">
+            <h1 style="font-size: 2rem; color: white; margin-bottom:2rem">Prévisions météorologiques</h1>
+    <!-- barre de recherche -->
+            <div class="searching">
+                <input type="search" name="searchcountry" id="country" placeholder="Entrer le nom d'un pays">
+                <button id="rechercher" type="submit">Recherche</button>
+            </div>
+        <!-- pays, date, temperature, temps icon -->
+            <div class="measure">
+                <h1 id="lePays">Gabon</h1>
+                <p>Lundi, 06 Sept 2023</p>
+                <h1 class="degreeenum" id="degrees">30&deg</h1>
+                <svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="96" height="96" fill="currentColor" class="bi bi-cloud-drizzle" viewBox="0 0 16 16"> <path d="M4.158 12.025a.5.5 0 0 1 .316.633l-.5 1.5a.5.5 0 0 1-.948-.316l.5-1.5a.5.5 0 0 1 .632-.317zm6 0a.5.5 0 0 1 .316.633l-.5 1.5a.5.5 0 0 1-.948-.316l.5-1.5a.5.5 0 0 1 .632-.317zm-3.5 1.5a.5.5 0 0 1 .316.633l-.5 1.5a.5.5 0 0 1-.948-.316l.5-1.5a.5.5 0 0 1 .632-.317zm6 0a.5.5 0 0 1 .316.633l-.5 1.5a.5.5 0 1 1-.948-.316l.5-1.5a.5.5 0 0 1 .632-.317zm.747-8.498a5.001 5.001 0 0 0-9.499-1.004A3.5 3.5 0 1 0 3.5 11H13a3 3 0 0 0 .405-5.973zM8.5 2a4 4 0 0 1 3.976 3.555.5.5 0 0 0 .5.445H13a2 2 0 0 1 0 4H3.5a2.5 2.5 0 1 1 .605-4.926.5.5 0 0 0 .596-.329A4.002 4.002 0 0 1 8.5 2z" fill="white"></path> </svg>
+                <p class="pluie" id="temps" >Pluvieux</p>
+            <!-- toggle button bouton pour switch temperature state -->
+                <div class="toggle-button-cover">
+                    <div class="button-cover">
+                        <div class="toggle">
+                            <input type="checkbox" id="degree">
+                            <div class="switch">
+                                <span>C</span>
+                            </div>
+                            <div class="layer"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+</html>
