@@ -1,0 +1,275 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+    
+main{
+    background:url(/img/rain.jpg);
+    display: flex;
+    flex-direction: column;
+    background-repeat:no-repeat;
+    background-size:cover;
+    justify-content: space-between;
+}
+
+#country{
+    width:746px;
+    height: 69px;
+    border-radius:15px;
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    background-color: transparent;
+}
+
+input::placeholder{
+    font-size: 1.2rem;
+}
+
+button[type="submit"]{
+    text-indent: -999px;
+    overflow: hidden;
+    width: 40px;
+    height: 3rem;
+    padding: 0;
+    margin: 0;
+    border: 1px solid transparent;
+    border-radius:15px;
+    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='34' height='34' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
+    cursor: pointer;
+}
+
+.searching{
+    display: flex;
+    border: 1px solid currentColor;
+    align-items: center;
+    width:746px;
+    border-radius:15px;
+    outline: none;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.60);
+    padding: 2px 20px 2px 23px;
+    margin-bottom:43px;
+}
+
+.measure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 746px;
+    height: 625px;
+    border-radius: 18px;
+    border: 2px solid #505050;
+    background: linear-gradient(56deg, rgba(255, 255, 255, 0.02) 0%, rgba(238, 236, 236, 0.06) 98.94%);
+    box-shadow: 2px 10px 41px 1px #081B1F;
+    backdrop-filter: blur(8px);
+    justify-content: center;
+}
+
+.measure h1, p {
+    color:white;
+}
+
+.weather{
+    margin-top:3rem;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    height:150vh;   
+}
+
+.pluie{
+    font-family: Poppins;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+}
+
+ .measure svg{
+    margin:13px 0 49px 0
+}
+
+
+.measure h1:nth-child(1){
+    font-size: 53px;
+    font-weight:400 ;
+    letter-spacing: -3.71px;
+}
+
+.measure p:nth-child(1){
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -0.36px;
+}
+
+.degreeenum{
+    margin-top: 41px;
+    font-family:Poppins;
+    font-size: 80px;
+    font-weight: 300;
+    letter-spacing: -6.4px;
+    width:10rem;
+    text-align: center;
+}
+
+@media (max-width:500px) {
+    .weather>h1{
+        text-align: center;
+        font-weight: 500;
+    }
+
+    .searching{
+        width: 305px;
+        height: 44px;
+    }
+    
+    #country{
+        width: 305px;
+        height: 43px;
+    }
+
+    input::placeholder{
+        font-size: 1rem;
+    }
+
+    button[type="submit"]{
+        padding:0.7rem; 
+    }
+
+    .measure{
+        width: 305px;
+    }
+
+    main{
+        background: url(/img/rain_mobile_2.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    .weather{
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+  
+}
+
+/* @media (min-width:1113px) and (max-width:499px){
+    .weather>h1{
+        text-align: center;
+        font-weight: 500;
+    }
+
+    .searching{
+        width: 465px;
+        height: 59px;
+    }
+    
+    #country{
+        width: 465px;
+        height: 59px;
+    }
+
+    input::placeholder{
+        font-size: 1.3rem;
+    }
+
+    button[type="submit"]{
+        padding:0.7rem; 
+    }
+
+    .measure{
+        width: 465px;
+    }
+
+    main{
+        background: url(/img/rain_mobile.jpg) no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+
+} */
+
+@media (max-width:1114px) and (min-width:499px){
+    .weather>h1{
+        text-align: center;
+        font-weight: 400;
+        height: 70px;
+    }
+
+    .searching{
+        width: 465px;
+        height: 70px;
+    }
+    
+    #country{
+        width: 465px;
+        height: 59px;
+    }
+
+    input::placeholder{
+        font-size: 1.3rem;
+    }
+
+    button[type="submit"]{
+        padding:0.7rem; 
+    }
+
+    .measure{
+        width: 465px;
+        height: 704px;
+    }
+
+    main{
+        background: url(/img/rain_mobile.jpg) no-repeat;
+        background-size: cover;
+        height: 160vh;
+    }
+
+}
+
+@media (min-width:2000px){
+    .weather>h1{
+        text-align: center;
+        font-weight: 300;
+        font-size: 45px;
+    }
+
+    .searching{
+        width: 945px;
+        height: 59px;
+    }
+    
+    #country{
+        width: 945px;
+        height: 59px;
+    }
+
+    input::placeholder{
+        font-size: 1.5rem;
+    }
+
+    button[type="submit"]{
+        padding:0.7rem; 
+    }
+
+    .measure{
+        width: 945px;
+    }
+
+    main{
+        background: url(/img/rain_mobile.jpg) no-repeat;
+        background-size: cover;
+        height: 120vh;
+    }
+
+}
+
