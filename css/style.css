@@ -10,7 +10,7 @@
 
     
 main{
-    background:url(/img/rain.jpg);
+    background:url(./img/rain.jpg);
     display: flex;
     flex-direction: column;
     background-repeat:no-repeat;
@@ -150,7 +150,7 @@ button[type="submit"]{
     }
 
     main{
-        background: url(/img/rain_mobile_2.jpg) no-repeat;
+        background: url(./img/rain_mobile_2.jpg) no-repeat;
         background-size: cover;
     }
 
@@ -229,7 +229,7 @@ button[type="submit"]{
     }
 
     main{
-        background: url(/img/rain_mobile.jpg) no-repeat;
+        background: url(./img/rain_mobile.jpg) no-repeat;
         background-size: cover;
         height: 160vh;
     }
