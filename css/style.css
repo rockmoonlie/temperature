@@ -102,6 +102,8 @@ button[type="submit"]{
     font-size: 53px;
     font-weight:400 ;
     letter-spacing: -3.71px;
+    width: 25rem;
+    text-align: center;
 }
 
 .measure p:nth-child(1){
@@ -117,7 +119,7 @@ button[type="submit"]{
     font-size: 80px;
     font-weight: 300;
     letter-spacing: -6.4px;
-    width:10rem;
+    width:25rem;
     text-align: center;
 }
 
